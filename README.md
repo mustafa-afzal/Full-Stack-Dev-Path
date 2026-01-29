@@ -1,4 +1,4 @@
-# Full-Stack Dev Path
+# FullStack Dev Path
 
 Working through [Scrimba's Fullstack Developer Career Path](https://scrimba.com/fullstack-path-c0fullstack).
 
