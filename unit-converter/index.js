@@ -10,7 +10,7 @@ const literP = document.getElementById("volume-p")
 const massP = document.getElementById("mass-p")
 
 
-convertBtn = document.getElementById("convert-btn")
+const convertBtn = document.getElementById("convert-btn")
 
 convertBtn.addEventListener("click", function() {
     let feet = Number(input.value) * 3.281
