@@ -1,9 +1,45 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img src="images/logo.png">
+        <div class="phone">
+            <header>
+                <div class="container">
+                    <img class="logo" src="images/logo.png">
+                    <img class="user" src="images/user-avatar.png">
+                </div>
+            </header>
+
+            <section class="user-info">
+                <div class="container">
+                    <img class="user" src="images/avatar-vangogh.jpg">
+                    <div class="text">
+                        <h3 class="username"> Vincent van Gogh</h3>
+                        <h3 class="location"> Zudert, Netherlands </h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="post">
+                <img class="user-post" src="images/post-vangogh.jpg">
+            </section>
+
+            <section class="stats">
+                <div class="icons">
+                    <img class="like" src="images/icon-heart.png">
+                    <img class="comment" src="images/icon-comment.png">
+                    <img class="dm" src="images/icon-dm.png">
+                </div>
+
+                <p class="likes"> 21,492 likes </p>
+                <p class="user-comment"> <span> vincey1853 </span> just took a few mushrooms lol</p>
+            </section>
+
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
