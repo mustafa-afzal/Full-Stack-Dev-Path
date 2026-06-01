@@ -2,4 +2,103 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+header img {
+    width: 207px;
+    height: 34.25px;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: 400;
+}
+
+li {
+    display: inline-block;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 75%;
+  left: 27.5%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 620px;
+}
+
+.date {
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-weight: bold;
+}
+
+/* Grid Section */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.grid h5 {
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #202020;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer h5 {
+    margin: 0;
+}
+
+.footer h6 {
+    margin: 0;
 }
