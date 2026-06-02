@@ -20,7 +20,6 @@ nav {
 
 header img {
     width: 207px;
-    height: 34.25px;
 }
 
 ul {
@@ -37,6 +36,12 @@ li {
 li a {
     text-decoration: none;
     color: black;
+    transition: 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    border-color: #202020;
 }
 
 .hero {
@@ -101,4 +106,95 @@ li a {
 
 .footer h6 {
     margin: 0;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        padding-left: 0.5rem;
+    }
+
+    header img {
+        width: 140px;
+    }
+
+    .overlay-text {
+        top: 30%;
+        left: 5%;
+        transform: none;
+        max-width: 360px;
+    }
+
+    .hero img{
+        min-height: 400px;
+        object-fit: cover;
+    }
+
+    .grid-container {
+        padding: 0 3rem;
+    }
+}
+
+/* About Me Page */
+
+.about-content img {
+    border-radius: 50%;
+    width: 44%;
+}
+
+.about-content {
+    padding: 0 1rem;
+}
+
+.about-content h2 {
+    font-size: 2.2rem;
+}
+
+.about-paragraph {
+    margin-bottom: 3rem;
+}
+
+.recent-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 3.5rem;
+}
+
+.recent-grid-element {
+    margin-bottom: 1rem;
+}
+
+.recent-posts h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+    .about-content img {
+        width: 20%;
+        margin-left: 5rem;
+    }
+
+    .header-content {
+        display: flex;
+        margin-top: 5rem;
+    }
+
+    .header-text {
+        max-width: 800px;
+        margin-left: 5rem;
+    }
+
+    .header-subtext {
+        padding: 3rem 20rem;
+        max-width: 1000px;
+    }
+
+    .recent-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
 }
