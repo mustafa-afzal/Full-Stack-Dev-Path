@@ -1,4 +1,85 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+input {
+    width: 61px;
+    height: 42px;
+}
+
+select {
+    width: 312px;
+    height: 42px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-family: inherit;
+    font-weight: 400;
+    color: #111827;
+}
+
+.btn {
+    height: 123px;
+    height: 42px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    color: gray/700;
+}
+
+#random-colors {
+    display: flex;
+}
+
+.swatch {
+    height: 440px;
+    margin-top: 1rem;
+}
+
+.color {
+    width: 20%;
+}
+
+.hex-code {
+    text-align: center;
+    margin: 0;
+    margin-top: 0.75rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#copy-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+}
+
+main {
+    position: relative;
 }
