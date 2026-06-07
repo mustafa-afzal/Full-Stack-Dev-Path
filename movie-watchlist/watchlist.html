@@ -11,27 +11,20 @@
             <header>
                 <img src="images/header-img.png">
                 <div id="header-content">
-                    <h1>Find your film</h1>
-                    <a href="watchlist.html"> My Watchlist </a>
+                    <h1>My Watchlist</h1>
+                    <a href="index.html"> <i class="fa-solid fa-magnifying-glass"></i> Search for Movies  </a>
                 </div>
             </header>
-            <div class="search-bar">
-                <img src="images/search.png" alt="search icon">
-                <input 
-                    type="search"
-                    id="search-bar"
-                    placeholder="Search for a movie"
-                    aria-label="Search for a movie in the database">
-                <button type="submit" id="submit">Search</button>
-            </div>
             <main>
                 <div class="empty-search" id="empty-search">
-                    <i class="fa-solid fa-film"></i>
-                    <h2> Start Exploring </h2>
+                    <h2> Your watchlist is looking a little empty... </h2>
+                    <a href="index.html" class="add-link">
+                        <i class="fa-solid fa-circle-plus"></i> Let's add some movies!
+                    </a>
                 </div>
                 <div id="movies-container"></div>
             </main>
         </div>
-        <script src="index.js"></script>
+        <script src="watchlist.js"></script>
     </body>
 </html>

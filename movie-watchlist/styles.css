@@ -1,30 +1,41 @@
+/* ===== Base / reset ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
 }
 
-.container {
-    width: 550px;
-    margin: 0 auto;
-    height: 779px;
-    margin-top: 5rem;
-    border: 2px solid red;
+/* Remove default margins once, then space things deliberately with gap below */
+h1, h2, h3, h5, p {
+    margin: 0;
 }
 
+/* ===== Layout shell ===== */
+.container {
+    width: 550px;
+    min-height: 779px;
+    margin: 5rem auto 0;
+}
+
+/* ===== Header ===== */
 header {
     position: relative;
-    width: 550px;
+    width: 100%;
     height: 208px;
-    overflow: hidden;
 }
 
 header img {
     position: absolute;
-    object-fit: cover;
-    object-position: 0 30%;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 0 30%;
 }
 
 header::after {
@@ -40,18 +51,18 @@ header::after {
 
 #header-content {
     position: relative;
+    z-index: 2;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 2;
     color: white;
 }
 
 #header-content h1 {
     padding-left: 42px;
-    font-weight: 800;
     font-size: 43px;
+    font-weight: 800;
 }
 
 #header-content a {
@@ -60,4 +71,159 @@ header::after {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
+}
+
+/* ===== Search bar ===== */
+.search-bar {
+    position: relative;
+    z-index: 3;
+    width: 362px;
+    height: 38px;
+    margin: -19px auto 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0.6rem;
+    background-color: #2E2E2F;
+    border: 1px solid #2E2E2F;
+    border-radius: 4px;
+    color: #A5A5A5;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar input {
+    padding-left: 1rem;
+    border: none;
+    background-color: #2E2E2F;
+    color: #A5A5A5;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: -1px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4B4B4B;
+    color: #FFFFFF;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ===== Main: empty state ===== */
+.empty-search {
+    height: calc(100% - 206px);
+    margin-top: -22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #0f0f0f;
+}
+
+.empty-search .fa-film {
+    color: #2E2E2F;
+    font-size: 64px;
+}
+
+.empty-search h2 {
+    color: #2E2E2F;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ===== Main: movie results ===== */
+#movies-container {
+    margin-top: -35px;
+    background-color: #0f0f0f;
+    padding-top: 4rem; 
+    height: 700px;
+}
+
+#movies-container h2 {
+    color: #2E2E2F;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.movie-card {
+    display: flex;
+    gap: 20px;              /* space between poster and text block */
+    width: 461px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-bottom: 1.5px solid #E5E7EB;
+    color: white;
+}
+
+.movie-card img {
+    width: 99px;
+    height: 147.71px;
+    margin-bottom: 45px;
+}
+
+.movie-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;            /* vertical rhythm: title / info / plot */
+    margin-top: 15px;
+}
+
+.movie-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.movie-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.movie-header p {
+    font-size: 12px;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.movie-info h5 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.movie-info button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+#plot {
+    font-size: 14px;
+    max-width: 370px;
+    margin-bottom: 20px;
+    color: #A5A5A5;
+}
+
+/* ===== Utilities (keep last so they win on equal specificity) ===== */
+.hidden {
+    display: none;
 }
