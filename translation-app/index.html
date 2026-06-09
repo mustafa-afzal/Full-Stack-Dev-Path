@@ -2,9 +2,53 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="container">
         <!-- Your HTML here -->
+            <header>
+                <div class="header-content">
+                    <img src="images/parrot.png">
+                    <div class="header-text">
+                        <h1> PollyGlot </h1>
+                        <h3> Perfect Translation Every Time </h3>
+                    </div>
+                </div>
+            </header>
+            <div class="main-container">
+                <form id="form">
+                    <h2 class="form-text"> Text to translate 👇 </h2>
+                    <textarea 
+                        id="form-input"
+                        name="form-input" 
+                        placeholder="How are you?"
+                        rows="2"></textarea> 
+                    <h2 class="form-text"> Select Language 👇 </h2>
+                    <div class="form-btns">
+                        <div class="form-btn-example">
+                            <input type="radio" name="language" value="french" id="french">
+                            <label for="french">French 🇫🇷</label>
+                        </div>
+                        <div class="form-btn-example">
+                            <input type="radio" name="language" value="spanish" id="spanish">
+                            <label for="spanish">Spanish 🇪🇸 </label>
+                        </div>
+
+                        <div class="form-btn-example">
+                            <input type="radio" name="language" value="arabic" id="arabic">
+                            <label for="arabic">Arabic 🇸🇦</label>
+                        </div>
+                    </div>
+                    <button id="translate"> Translate </button>
+                </form>
+            </div>
+         </div>
         <script src="index.js" type="module"></script>
     </body>
 </html>

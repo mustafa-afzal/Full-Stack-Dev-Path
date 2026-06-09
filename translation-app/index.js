@@ -1,0 +1,1 @@
+const translateInput = document.getElementById('form-input')
