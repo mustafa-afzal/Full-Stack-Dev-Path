@@ -72,7 +72,7 @@ header {
     padding-top: 1rem;
 }
 
-#form-input {
+#form-input, #form-output {
     background-color: #EFF0F4;
     width: 317px;
     height: 118px;
@@ -90,10 +90,11 @@ header {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
-    margin-left: 2rem;
+    height: 120px;
+    padding-left: 2rem;
     justify-content: center;
-    text-align: left;
     font-family: inherit;
     font-size: 20px;
     font-weight: 700;
@@ -103,13 +104,18 @@ header {
     margin-right: 0.75rem;
 }
 
-#translate {
+#translate-btn {
     color: white;
     background-color: #035A9D;
     font-size: 24px;
     font-weight: 700;
-    padding: 10px 110px;
+    padding: 10px 0;
+    width: 317px;
     border: none;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }

@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="UTF-8" />
         <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +24,17 @@
             </header>
             <div class="main-container">
                 <form id="form">
-                    <h2 class="form-text"> Text to translate 👇 </h2>
+                    <h2 class="form-text" id="translate-text"> Text to translate 👇 </h2>
                     <textarea 
                         id="form-input"
                         name="form-input" 
                         placeholder="How are you?"
-                        rows="2"></textarea> 
-                    <h2 class="form-text"> Select Language 👇 </h2>
+                        rows="2"
+                        required></textarea> 
+                    <h2 class="form-text" id="language-text"> Select Language 👇 </h2>
                     <div class="form-btns">
                         <div class="form-btn-example">
-                            <input type="radio" name="language" value="french" id="french">
+                            <input type="radio" name="language" value="french" id="french" required>
                             <label for="french">French 🇫🇷</label>
                         </div>
                         <div class="form-btn-example">
@@ -45,7 +47,7 @@
                             <label for="arabic">Arabic 🇸🇦</label>
                         </div>
                     </div>
-                    <button id="translate"> Translate </button>
+                    <button id="translate-btn"> Translate </button>
                 </form>
             </div>
          </div>
