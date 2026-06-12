@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PopChoice</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Carter+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Carter+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header> 
+                <img src="popcorn.png">
+                <h1> PopChoice</h1>
+            </header>
+            <main id="main-content">
+                <form id="input-form">
+                    <div class="form-element">
+                        <label for="fav-movie"> What's your favorite movie and why? </label>
+                        <textarea 
+                            id="fav-movie"
+                            name="fav-movie"
+                            placeholder="What's your favorite movie?"
+                            rows="3"></textarea>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="mood"> Are you in the mood for something new or a classic? </label>
+                        <textarea 
+                            id="mood"
+                            name="mood"
+                            placeholder="What's the vibe?"
+                            rows="3"></textarea>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="movie-type"> Do you wanna have fun or do you want something serious? </label>
+                        <textarea 
+                            id="movie-type"
+                            name="movie-type"
+                            placeholder="Fun or serious?"
+                            rows="3"></textarea>
+                    </div>
+                    
+                    <button id="letsgo-btn" type="submit"> Let's Go </button>
+
+                </form>
+            </main>
+        </div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html> 
