@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1c1c1c;
+}
+
+.container {
+    width: 550px;
+    height: 868px;
+    margin: 0 auto;
+    background-color: #23252C;
+    border: 0.5px solid whitesmoke;
+}
+
+.inner-container {
+    width: 317px;
+    height: 780px;
+    margin: 0 auto;
+    background-color: #1A1B21;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 317px;
+    height: 300px;
+}
+
+header h1 {
+     color: #F5F5F5;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+header h3 {
+    color: #F3BF99;
+    font-size: 13px;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+
+header h5 {
+    font-size: 10.25px;
+    color: #F5F5F5;
+    margin-top: 0.8rem;
+    font-weight: 400;
+}
+
+.btn-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    background-color: white;
+    padding: 6px 28px;
+    border-radius: 8px;
+    border: none;
+    font-family: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    background-color: #5093E2;
+    padding: 6px 16px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-family: inherit;
+}
+
+
+.about, .interests {
+    color: #F5F5F5;
+    margin-top: 2.2rem;
+    padding: 0 1.5rem;
+}
+
+.about h3, .interests h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about p, .interests p {
+    font-size: 10.25px;
+    margin-top: 0.65rem;
+    line-height: 16px;
+    color: #DCDCDC;
+}
+
+.interests {
+    margin-top: 1.5rem;
+}
+
+footer {
+    background-color: #161619;
+    display: flex;
+    justify-content: center;
+    width: 317px;
+    height: 64px;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.25rem;
+}
+
+footer svg {
+    color: #918E9B;
+}
+
+
+
+
