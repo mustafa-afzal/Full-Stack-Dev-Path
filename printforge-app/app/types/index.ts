@@ -39,7 +39,7 @@ export type ModelsPageProps = {
     searchParams: {
         q?: string
     }
-}
+}    
 
 export type ModelDetailPageProps = {
     params: Promise<{
