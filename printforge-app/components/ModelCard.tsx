@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type {Model} from '@/lib/types'
 
+// Model Card Component
+
 
 export default function ModelCard({model}:{model:Model}){
   return (
